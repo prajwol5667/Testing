@@ -13,4 +13,9 @@ public interface IJavaScriptExecutor {
 	public void executeAsyncJavaScript(String scriptToExecute, Object[] args) throws Exception;
 	
 	public void ScrollinsideDiv(WebElement element) throws Exception;
+	
+	public void hoverAndClick(WebElement element) throws Exception; 
+
+	
+	
 }

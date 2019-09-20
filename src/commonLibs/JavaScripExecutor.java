@@ -3,6 +3,7 @@ package commonLibs;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
 import commonLibsInterfaces.IJavaScriptExecutor;
 	
@@ -54,6 +55,13 @@ public class JavaScripExecutor implements IJavaScriptExecutor{
 		JavascriptExecutor jsEngine = (JavascriptExecutor)Driver;
 		jsEngine.executeScript("arguments[0].scrollIntoView(true);",element);
 		
+	}
+	
+	@Override
+	public void hoverAndClick(WebElement element) throws Exception{
+	Actions act = new Actions(Driver);
+	act.moveToElement(element).click().build().perform();
+	
 	}
 
 }
