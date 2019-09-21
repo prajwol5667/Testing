@@ -23,7 +23,8 @@ public class CommonDriver implements IDriver {
 		
 		switch(broswerType.toLowerCase()) {
 		case "chrome":
-			System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver_win32\\chromedriver.exe"); // Set your driver path
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\THE PRO\\Downloads\\chromedriver_win32\\chromedriver.exe"); // Set your driver path
+			//C:\\Selenium\\chromedriver_win32\\chromedriver.exe
 			Driver = new ChromeDriver();
 			break;
 			

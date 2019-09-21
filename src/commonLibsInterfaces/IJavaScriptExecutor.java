@@ -14,7 +14,7 @@ public interface IJavaScriptExecutor {
 	
 	public void ScrollinsideDiv(WebElement element) throws Exception;
 	
-	public void hoverAndClick(WebElement element) throws Exception; 
+	public void hover(WebElement element) throws Exception; 
 
 	
 	
